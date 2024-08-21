@@ -1,11 +1,14 @@
 package com.springboot.calculator.impl;
 
+import org.springframework.stereotype.Service;
+
 import com.springboot.calculator.exception.CalculatorException;
 import com.springboot.calculator.intf.CalculatorChaining;
 
 import lombok.extern.slf4j.Slf4j;
 
 @Slf4j
+@Service
 public class CalculatorChainingImpl implements CalculatorChaining {
 	
 	private double result = 0;
